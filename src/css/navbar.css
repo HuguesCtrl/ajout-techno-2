@@ -1,0 +1,24 @@
+.main-menu {
+    background-color: #ee792b;
+}
+
+.main-menu ul {
+    margin: 0;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.main-menu li {
+    list-style-type: none;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: #0B0D69;
+}
+
+.bold {
+    font-weight: bold;
+}

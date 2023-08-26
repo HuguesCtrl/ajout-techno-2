@@ -1,0 +1,40 @@
+.form-techno {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 10px auto 0;
+    gap: 15px;
+}
+
+
+
+.form-techno .input {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-techno input {
+    padding: 5px;
+    outline: none;
+}
+
+.btn-submit {
+    background-color: #EE792B;
+    border: none;
+    padding: 5px;
+    font-family: "Segoe Ui";
+    width: 50%;
+    margin: 7px auto 0;
+    cursor: pointer;
+}
+
+.success {
+    color: #EE792B;
+    text-align: center;
+}
+
+.error {
+    text-align: center;
+    color: #f1f1f1;
+}
