@@ -3,4 +3,22 @@
     padding: 15px;
     margin-bottom: 10px;
     border-radius: 15px;
+    position: relative
+}
+
+.techno-container {
+    max-width: 900px;
+    margin: 10px auto 0;
+}
+
+.btn-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #f1f1f1;
+    background-color: #0B0D69;
+    border: none;
+    padding: 10px;
+    border-radius: 12px;
 }

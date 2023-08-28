@@ -5,11 +5,10 @@ import TechnoList from "./pages/TechnoList";
 import Error from "./pages/Error";
 import Navbar from "./Navbar";
 import "./css/main.css";
-import { useState } from "react";
-import { nanoid } from "nanoid";
+import useLocalStorage from "./hook/useLocalStorage";
 
 function App() {
-  const [techno, setTechno] = useState([]);
+  const [techno, setTechno] = useLocalStorage("technoList", []);
   return (
     <div>
       <HashRouter>
@@ -20,7 +19,10 @@ function App() {
             path="/technoadd"
             element={<TechnoAdd techno={techno} setTechno={setTechno} />}
           />
-          <Route path="/technolist" element={<TechnoList techno={techno} />} />
+          <Route
+            path="/technolist"
+            element={<TechnoList techno={techno} setTechno={setTechno} />}
+          />
           <Route path="*" element={<Error />} />
         </Routes>
       </HashRouter>
